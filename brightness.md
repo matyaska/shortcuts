@@ -1,4 +1,4 @@
-This shortcut is a case study on how to dynamically set brightness based on a calculation on the current brightness level.
+This shortcut is a case study on dynamically setting brightness based on calculating the current brightness level.
 I use it as home automation.
 
 #Dependencies
@@ -8,14 +8,15 @@ I use it as home automation.
 - set to: battery level falls below (your desired value)
 
 #Do
-All elements are found in the "Scripting" section.
+In the "Scripting" section, you can find all the required elements.
 a. Device, "Get Device Details", then select "Current Brightness"
 b. Math, "Calculate"
-  b.1. Select "Current Brightness" as first number, 
+  b.1. Select "Current Brightness" as the first number, 
   b.2. Select operand "divide", 
   b.3. Input the desired divider number (e.g. 2)
 c. Math, "Round"
   c.1. Select "Calculation Results"
   c.2. Select to "Tenths"
-d. Device, "Set Brightness" to "Rounded Number" (long press the default value)
+d. Device, "Set Brightness" to "Rounded Number" (long-press the default value)
 
+![Screenshot](https://user-images.githubusercontent.com/5004428/125288259-37d28680-e31e-11eb-82d2-85f73421dde9.jpeg)
